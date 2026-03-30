@@ -1,0 +1,16 @@
+name: oare_ondc_resilience
+version: "1.0.0"
+entrypoint: "server.app:app"
+
+tasks:
+  - id: basic_flow
+    difficulty: easy
+    description: Follow Beckn flow
+
+  - id: timeout_case
+    difficulty: medium
+    description: Handle API timeout
+
+  - id: chaos_case
+    difficulty: hard
+    description: Handle failures
