@@ -9,7 +9,7 @@ import { CheckCircle2, ShieldAlert } from "lucide-react";
 export default function OAREDashboard() {
   const [state, setState] = useState<any>(null);
 
-  const API_URL = "http://host.docker.internal:8000";
+  const API_URL = "http://localhost:8000";
 
   const fetchState = async () => {
     try {
@@ -23,7 +23,7 @@ export default function OAREDashboard() {
   };
 
   const handleReset = async () => {
-    await fetch(`${API_URL}/reset`);
+    await fetch(`${API_URL}/reset`, { method: "POST" });
     fetchState();
   };
 
