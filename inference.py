@@ -26,7 +26,7 @@ except ImportError:
 
             def step(self, action_str):
                 # Convert string action to models.Action if needed
-                from models import Action
+                from server.models import Action
                 # Ensure we strip parentheses if the LLM/Mock added them
                 cmd = action_str.replace("()", "").strip()
                 obs = self.env.step(Action(command=cmd))

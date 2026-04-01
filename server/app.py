@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from server.environment import OAREEnvironment
-from models import Action
+from server.models import Action
 
 app = FastAPI()
 

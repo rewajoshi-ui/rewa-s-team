@@ -1,5 +1,5 @@
 import random
-from models import Action, Observation
+from server.models import Action, Observation
 
 
 class OAREEnvironment:
